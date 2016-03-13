@@ -16,28 +16,23 @@
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="New Button"
-            android:id="@+id/button" />
+            android:text="@string/alertPlayers"
+            android:id="@+id/alert"
+            android:onClick="alertPlayersButton" />
 
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="New Button"
-            android:id="@+id/button2" />
+            android:text="@string/reportTO"
+            android:id="@+id/button2"
+            android:onClick="reportResultsButton" />
 
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="New Button"
-            android:id="@+id/button3" />
+            android:text="@string/display"
+            android:id="@+id/button3"
+            android:onClick="displayInfoButton" />
 
-        <Button
-            style="?android:attr/buttonStyleSmall"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/refresh"
-            android:id="@+id/refresh"
-            android:layout_gravity="center_horizontal"
-            android:onClick="refresh" />
     </LinearLayout>
 </RelativeLayout>

@@ -9,71 +9,36 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.meleeChat.MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/name_prompt"
-        android:textColor="#000000"
-        android:textSize="24sp"
-        android:text="@string/name_prompt"
-        android:layout_above="@+id/username"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginBottom="64dp" />
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="1">
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/start_chat"
-        android:onClick="onClick"
-        android:enabled="true"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="28dp"
-        android:text="@string/login" />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/setup"
+            android:id="@+id/toLogin"
+            android:onClick="TOLogin"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_weight=".5" />
 
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:inputType="textPersonName"
-        android:ems="10"
-        android:id="@+id/username"
-        android:text="21pretzels"
-        android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true" />
-
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:inputType="textPassword"
-        android:ems="10"
-        android:id="@+id/key"
-        android:layout_marginBottom="59dp"
-        android:layout_above="@+id/start_chat"
-        android:layout_centerHorizontal="true"
-        android:text="FlyxNHAwJNMvcoibWQvxIp4jaFcu28tIgh0eUQak" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/textView2"
-        android:textColor="#000000"
-        android:textSize="24sp"
-        android:text="@string/api_prompt"
-        android:layout_above="@+id/key"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="@string/TO"
-        android:id="@+id/textView"
-        android:layout_alignParentTop="true"
-        android:layout_alignLeft="@+id/username"
-        android:layout_alignStart="@+id/username"
-        android:textSize="50sp"
-        android:layout_alignRight="@+id/textView2"
-        android:layout_alignEnd="@+id/textView2" />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/guest"
+            android:id="@+id/playerLogin"
+            android:onClick="playerLogin"
+            android:layout_alignLeft="@+id/toLogin"
+            android:layout_alignStart="@+id/toLogin"
+            android:layout_alignParentBottom="true"
+            android:layout_alignRight="@+id/toLogin"
+            android:layout_alignEnd="@+id/toLogin"
+            android:layout_weight=".5" />
+    </LinearLayout>
 </RelativeLayout>

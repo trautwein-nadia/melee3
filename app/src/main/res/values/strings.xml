@@ -1,12 +1,20 @@
 <resources>
     <string name="app_name">MeleeMatchFinder</string>
-    <string name="name_prompt">Please enter your username:</string>
-    <string name="api_prompt">Please enter your API key:</string>
-    <string name="TO">TO login</string>
-    <string name="login">login</string>
     <string name="refresh">refresh</string>
-    <string name="send">send</string>
+
+    <string name="setup">Start an event</string>
+    <string name="guest">Competitor Login</string>
+
+    <string name="name_prompt">Challonge username:</string>
+    <string name="api_prompt">Challonge API key:</string>
+    <string name="event_prompt">Challonge domain:</string>
+    <string name="login">login</string>
+    <string name="player_prompt">Enter your tag:</string>
+
+    <string name="alertPlayers">Alert Players</string>
+    <string name="reportTO">Report results</string>
+    <string name="display">Display Bracket Info</string>
+
     <string name="tag">Tag</string>
-    <string name="name">name</string>
     <string name="alert">Alert</string>
 </resources>
